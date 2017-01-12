@@ -1,0 +1,71 @@
+<div class="container-fluid" ng-controller="homeController">
+  <div class="row">
+      <div class="col-md-8">
+            <div id="slides_control">
+              <div>
+               <uib-carousel >
+                <uib-slide ng-repeat="slide in slides">
+                  <img ng-src="{{slide.image}}" style="margin:auto;">
+                 
+                </uib-slide>
+              </uib-carousel>
+              </div>
+            </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default panelDefault">
+          <div class="panel-heading panelHeading">Notifications</div>
+          <div class="panel-body panelBody">
+            Basic panel example
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="row" style="margin-top: 20px">
+    <div class="col-md-4">
+        <div class="panel panel-default panelDefault">
+            <div class="panel-heading panelHeading">About Us</div>
+            <div class="panel-body panelBody">
+                Basic panel example
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default panelDefault">
+            <div class="panel-heading panelHeading">Latest News</div>
+            <div class="panel-body panelBody">
+              Basic panel example
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default panelDefault">
+            <div class="panel-heading panelHeading">Courses</div>
+            <div class="panel-body panelBody">
+              Basic panel example
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 20px">
+    <div class="col-md-8">
+        <div class="panel panel-default panelDefault">
+            <div class="panel-heading panelHeading">Photo Gallery</div>
+            <div class="panel-body panelBody" style="min-height:354px">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default panelDefault">
+          <div class="panel-heading panelHeading">Placements</div>
+          <div class="panel-body panelBody">
+            <ul class="placements">
+                <li ng-repeat="placement in placements"><img ng-src="{{placement.image}}" /></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div> 
+
+</div>  
